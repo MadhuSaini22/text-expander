@@ -6,6 +6,10 @@ Define shortcuts from your terminal, run the background daemon, and type trigger
 
 When a trigger is followed by **Space**, **Enter**, or **Tab**, it expands into the saved text.
 
+Website: https://text-expander-ms.lovable.app/  
+PyPI: https://pypi.org/project/text-expander/  
+GitHub: https://github.com/MadhuSaini22/text-expander
+
 > In examples, `<space>` means: press the Space bar on your keyboard.  
 > Example: `;l<space>` means type `;l`, then press Space.
 
@@ -374,4 +378,3 @@ python -m pip install build twine
 python -m build
 python -m twine check dist/*
 ```
-

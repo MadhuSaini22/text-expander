@@ -3,16 +3,17 @@ from setuptools import find_packages, setup
 
 setup(
     name="text-expander",
-    version="0.1.0",
+    version="0.1.1",
     description="Terminal-only cross-platform text expander with global shortcut expansion.",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     author="Madhu Saini",
     license="MIT",
     project_urls={
-        "Homepage": "https://github.com/MadhuSaini22/text-expander",
+        "Homepage": "https://text-expander-ms.lovable.app/",
         "Source": "https://github.com/MadhuSaini22/text-expander",
         "Issues": "https://github.com/MadhuSaini22/text-expander/issues",
+        "PyPI": "https://pypi.org/project/text-expander/",
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
