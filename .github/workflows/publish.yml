@@ -22,13 +22,13 @@ jobs:
           python-version: "3.x"
 
       - name: Install build tools
-        run: python -m pip install --upgrade pip setuptools wheel twine
+        run: python -m pip install --upgrade pip setuptools wheel build twine
 
       - name: Run tests
-        run: python -m unittest discover -s tests -v
+        run: PYTHONPATH=src python -m unittest discover -s tests -v
 
       - name: Build distributions
-        run: python setup.py sdist bdist_wheel
+        run: python -m build
 
       - name: Check distributions
         run: python -m twine check dist/*
@@ -82,4 +82,3 @@ jobs:
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-
